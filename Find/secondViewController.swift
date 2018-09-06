@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 
 class secondViewController: UIViewController {
@@ -66,11 +67,19 @@ class secondViewController: UIViewController {
         _ = VerifyPassword(InputPassword: "password")
         
         if(self.email.text != nil && self.password.text != nil ){
-//            let alert = UIAlertController(title: "Invalid", message: "Please enter your email and password", preferredStyle: UIAlertControllerStyle.alert)
-//            alert.addAction(UIAlertAction(title:"Ok", style: UIAlertActionStyle.default, handler: nil))
-//            self.present(alert, animated:true,completion: nil)
-
-            self.performSegue(withIdentifier: "connect", sender: self)
+            
+            Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
+                if error != nil {
+             
+                    let alert = UIAlertController(title: "Invalid", message: "Please enter your email and password", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title:"Ok", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated:true,completion: nil)
+                    
+                }
+                else {
+                    self.performSegue(withIdentifier: "connect", sender: self)
+                }
+            }
         }
         
         

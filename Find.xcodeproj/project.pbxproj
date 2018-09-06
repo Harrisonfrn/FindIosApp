@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD9604199235D8170E87805E /* Pods_Find.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5244BFCC0B55883D0E0FA233 /* Pods_Find.framework */; };
+		EC44434A214165CF00004E76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC444349214165CF00004E76 /* GoogleService-Info.plist */; };
 		EC6BB2C9213E7AD700570C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2C8213E7AD700570C2A /* AppDelegate.swift */; };
 		EC6BB2CB213E7AD700570C2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2CA213E7AD700570C2A /* ViewController.swift */; };
 		EC6BB2CE213E7AD700570C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BB2CC213E7AD700570C2A /* Main.storyboard */; };
@@ -15,13 +16,13 @@
 		EC6BB2D3213E7AD700570C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BB2D1213E7AD700570C2A /* LaunchScreen.storyboard */; };
 		EC6BB2DB213E93C100570C2A /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2DA213E93C100570C2A /* secondViewController.swift */; };
 		EC6BB2DD2140080C00570C2A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2DC2140080C00570C2A /* ThirdViewController.swift */; };
-		EC75F0B12141620400757355 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC75F0B02141620400757355 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22FDBA493380CB5F8210975C /* Pods-Find.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find/Pods-Find.debug.xcconfig"; sourceTree = "<group>"; };
 		5244BFCC0B55883D0E0FA233 /* Pods_Find.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75188C85782CE63D998CA8CB /* Pods-Find.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find/Pods-Find.release.xcconfig"; sourceTree = "<group>"; };
+		EC444349214165CF00004E76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC6BB2C5213E7AD600570C2A /* Find.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Find.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6BB2C8213E7AD700570C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6BB2CA213E7AD700570C2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		EC6BB2D4213E7AD700570C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6BB2DA213E93C100570C2A /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		EC6BB2DC2140080C00570C2A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		EC75F0B02141620400757355 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,7 @@
 		EC6BB2C7213E7AD600570C2A /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				EC444349214165CF00004E76 /* GoogleService-Info.plist */,
 				EC6BB2C8213E7AD700570C2A /* AppDelegate.swift */,
 				EC6BB2CA213E7AD700570C2A /* ViewController.swift */,
 				EC6BB2DA213E93C100570C2A /* secondViewController.swift */,
@@ -92,7 +93,6 @@
 				EC6BB2CF213E7AD700570C2A /* Assets.xcassets */,
 				EC6BB2D1213E7AD700570C2A /* LaunchScreen.storyboard */,
 				EC6BB2D4213E7AD700570C2A /* Info.plist */,
-				EC75F0B02141620400757355 /* GoogleService-Info.plist */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 				TargetAttributes = {
 					EC6BB2C4213E7AD600570C2A = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -160,7 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6BB2D3213E7AD700570C2A /* LaunchScreen.storyboard in Resources */,
-				EC75F0B12141620400757355 /* GoogleService-Info.plist in Resources */,
+				EC44434A214165CF00004E76 /* GoogleService-Info.plist in Resources */,
 				EC6BB2D0213E7AD700570C2A /* Assets.xcassets in Resources */,
 				EC6BB2CE213E7AD700570C2A /* Main.storyboard in Resources */,
 			);
@@ -372,11 +372,13 @@
 			baseConfigurationReference = 22FDBA493380CB5F8210975C /* Pods-Find.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Find/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.troiswa.Find;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,11 +389,13 @@
 			baseConfigurationReference = 75188C85782CE63D998CA8CB /* Pods-Find.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Find/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.troiswa.Find;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
