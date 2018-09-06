@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD9604199235D8170E87805E /* Pods_Find.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5244BFCC0B55883D0E0FA233 /* Pods_Find.framework */; };
 		EC6BB2C9213E7AD700570C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2C8213E7AD700570C2A /* AppDelegate.swift */; };
 		EC6BB2CB213E7AD700570C2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2CA213E7AD700570C2A /* ViewController.swift */; };
 		EC6BB2CE213E7AD700570C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BB2CC213E7AD700570C2A /* Main.storyboard */; };
 		EC6BB2D0213E7AD700570C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6BB2CF213E7AD700570C2A /* Assets.xcassets */; };
 		EC6BB2D3213E7AD700570C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BB2D1213E7AD700570C2A /* LaunchScreen.storyboard */; };
+		EC6BB2DB213E93C100570C2A /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2DA213E93C100570C2A /* secondViewController.swift */; };
+		EC6BB2DD2140080C00570C2A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2DC2140080C00570C2A /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22FDBA493380CB5F8210975C /* Pods-Find.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find/Pods-Find.debug.xcconfig"; sourceTree = "<group>"; };
+		5244BFCC0B55883D0E0FA233 /* Pods_Find.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75188C85782CE63D998CA8CB /* Pods-Find.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find/Pods-Find.release.xcconfig"; sourceTree = "<group>"; };
 		EC6BB2C5213E7AD600570C2A /* Find.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Find.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6BB2C8213E7AD700570C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6BB2CA213E7AD700570C2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		EC6BB2CF213E7AD700570C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6BB2D2213E7AD700570C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6BB2D4213E7AD700570C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6BB2DA213E93C100570C2A /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		EC6BB2DC2140080C00570C2A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9604199235D8170E87805E /* Pods_Find.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54C824F83FA8579587033A33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22FDBA493380CB5F8210975C /* Pods-Find.debug.xcconfig */,
+				75188C85782CE63D998CA8CB /* Pods-Find.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63EC61F5A8EDC67A2269F187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5244BFCC0B55883D0E0FA233 /* Pods_Find.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC6BB2BC213E7AD600570C2A = {
 			isa = PBXGroup;
 			children = (
 				EC6BB2C7213E7AD600570C2A /* Find */,
 				EC6BB2C6213E7AD600570C2A /* Products */,
+				54C824F83FA8579587033A33 /* Pods */,
+				63EC61F5A8EDC67A2269F187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,8 @@
 			children = (
 				EC6BB2C8213E7AD700570C2A /* AppDelegate.swift */,
 				EC6BB2CA213E7AD700570C2A /* ViewController.swift */,
+				EC6BB2DA213E93C100570C2A /* secondViewController.swift */,
+				EC6BB2DC2140080C00570C2A /* ThirdViewController.swift */,
 				EC6BB2CC213E7AD700570C2A /* Main.storyboard */,
 				EC6BB2CF213E7AD700570C2A /* Assets.xcassets */,
 				EC6BB2D1213E7AD700570C2A /* LaunchScreen.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6BB2D7213E7AD700570C2A /* Build configuration list for PBXNativeTarget "Find" */;
 			buildPhases = (
+				F26FB03CB997D12B79219316 /* [CP] Check Pods Manifest.lock */,
 				EC6BB2C1213E7AD600570C2A /* Sources */,
 				EC6BB2C2213E7AD600570C2A /* Frameworks */,
 				EC6BB2C3213E7AD600570C2A /* Resources */,
+				27C911DCF99B4FCC8B009EC6 /* [CP] Embed Pods Frameworks */,
+				5F7EA6C7162F4CD4EA0105BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +164,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27C911DCF99B4FCC8B009EC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Find/Pods-Find-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find/Pods-Find-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F7EA6C7162F4CD4EA0105BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find/Pods-Find-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26FB03CB997D12B79219316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Find-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC6BB2C1213E7AD600570C2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EC6BB2CB213E7AD700570C2A /* ViewController.swift in Sources */,
+				EC6BB2DB213E93C100570C2A /* secondViewController.swift in Sources */,
+				EC6BB2DD2140080C00570C2A /* ThirdViewController.swift in Sources */,
 				EC6BB2C9213E7AD700570C2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +363,7 @@
 		};
 		EC6BB2D8213E7AD700570C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FDBA493380CB5F8210975C /* Pods-Find.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +378,7 @@
 		};
 		EC6BB2D9213E7AD700570C2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75188C85782CE63D998CA8CB /* Pods-Find.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
