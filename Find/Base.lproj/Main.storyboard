@@ -173,33 +173,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZY-pr-U2w">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZY-pr-U2w">
                                 <rect key="frame" x="74" y="252" width="227" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U89-QP-7Sa">
-                                <rect key="frame" x="160" y="415" width="55" height="30"/>
-                                <state key="normal" title="Sign Up"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U89-QP-7Sa">
+                                <rect key="frame" x="160" y="318" width="55" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="connect:" destination="CDV-ar-SJa" eventType="touchUpInside" id="Gvi-Mx-wLR"/>
                                     <action selector="register:" destination="z0g-pm-Xln" eventType="touchUpInside" id="LYd-zy-0sD"/>
-                                    <segue destination="Trt-99-34g" kind="show" identifier="Profil" id="ZKb-7f-etz"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-1M-IBc">
-                                <rect key="frame" x="74" y="301" width="227" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="U89-QP-7Sa" firstAttribute="centerY" secondItem="Uz4-Ro-KrH" secondAttribute="centerY" id="1SC-is-zZc"/>
                             <constraint firstItem="Uz4-Ro-KrH" firstAttribute="centerX" secondItem="CZY-pr-U2w" secondAttribute="centerX" id="4qO-RH-UAg"/>
                             <constraint firstItem="Uz4-Ro-KrH" firstAttribute="trailing" secondItem="W02-Pf-03P" secondAttribute="trailing" id="ANe-2g-mCW"/>
+                            <constraint firstItem="CZY-pr-U2w" firstAttribute="top" secondItem="Zvr-L4-x7e" secondAttribute="bottom" constant="22" id="Fwx-az-xO5"/>
                             <constraint firstItem="Zvr-L4-x7e" firstAttribute="leading" secondItem="CZY-pr-U2w" secondAttribute="leading" id="GhE-TK-Ypw"/>
                             <constraint firstItem="Uz4-Ro-KrH" firstAttribute="centerX" secondItem="U89-QP-7Sa" secondAttribute="centerX" id="N1J-Fk-CYM"/>
                             <constraint firstItem="Uz4-Ro-KrH" firstAttribute="bottom" secondItem="W02-Pf-03P" secondAttribute="bottom" id="S4c-i6-HKw"/>
@@ -215,11 +212,12 @@
                         <viewLayoutGuide key="safeArea" id="W02-Pf-03P"/>
                     </view>
                     <connections>
-                        <outlet property="ConfirmPassword" destination="Wjb-1M-IBc" id="M9Z-Zf-4ny"/>
                         <outlet property="Email" destination="Zvr-L4-x7e" id="0zf-EP-qbE"/>
                         <outlet property="Password" destination="CZY-pr-U2w" id="WQv-5W-qb6"/>
+                        <outlet property="aa" destination="U89-QP-7Sa" id="lbI-jI-Mvb"/>
                         <outlet property="img" destination="Uz4-Ro-KrH" id="bdY-me-lBV"/>
                         <outlet property="view" destination="Uz4-Ro-KrH" id="6ei-6l-dma"/>
+                        <segue destination="C4g-4l-bCU" kind="show" identifier="Profil" id="oCI-Ce-cvA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gd-xR-ds8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,6 +277,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZKb-7f-etz"/>
+        <segue reference="oCI-Ce-cvA"/>
     </inferredMetricsTieBreakers>
 </document>

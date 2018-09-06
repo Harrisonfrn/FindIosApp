@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class ThirdViewController: UIViewController {
 
     @IBOutlet weak var Email: UITextField!
     @IBOutlet weak var Password: UITextField!
-    @IBOutlet weak var ConfirmPassword: UITextField!
+    @IBOutlet weak var aa: UIButton!
     
     @IBOutlet weak var img: UIImageView!
     
@@ -36,6 +38,8 @@ class ThirdViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hj.jpg")!)
         
+        aa.layer.cornerRadius = 6
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,17 +49,14 @@ class ThirdViewController: UIViewController {
     
     @IBAction func register(_ sender: Any) {
         
-        if(self.Email.text != nil && self.Password.text == ConfirmPassword.text ){
-   
+        if(self.Email.text != nil && self.Password.text != nil ){
             
-            self.performSegue(withIdentifier: "connect", sender: self)
-        }
-        
-        if ConfirmPassword.text == Password.text {
-        
-        } else {
+            Auth.auth().createUser(withEmail: Email.text!, password: Password.text!) { (authResult, error) in
+                // ...
+                guard let user = authResult?.user else { return }
+            }
             
-            //Passwords dont match
+            self.performSegue(withIdentifier: "Profil", sender: self)
         }
         
     }

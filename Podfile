@@ -7,5 +7,7 @@ target 'Find' do
 
   # Pods for Find
   pod 'Firebase/Auth'
+  
+  pod 'Firebase/Core'
 
 end

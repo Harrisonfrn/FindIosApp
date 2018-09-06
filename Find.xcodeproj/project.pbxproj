@@ -15,6 +15,7 @@
 		EC6BB2D3213E7AD700570C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BB2D1213E7AD700570C2A /* LaunchScreen.storyboard */; };
 		EC6BB2DB213E93C100570C2A /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2DA213E93C100570C2A /* secondViewController.swift */; };
 		EC6BB2DD2140080C00570C2A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BB2DC2140080C00570C2A /* ThirdViewController.swift */; };
+		EC75F0AF2141554E00757355 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC75F0AE2141554E00757355 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EC6BB2D4213E7AD700570C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6BB2DA213E93C100570C2A /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		EC6BB2DC2140080C00570C2A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		EC75F0AE2141554E00757355 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				EC6BB2CF213E7AD700570C2A /* Assets.xcassets */,
 				EC6BB2D1213E7AD700570C2A /* LaunchScreen.storyboard */,
 				EC6BB2D4213E7AD700570C2A /* Info.plist */,
+				EC75F0AE2141554E00757355 /* GoogleService-Info.plist */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6BB2D3213E7AD700570C2A /* LaunchScreen.storyboard in Resources */,
+				EC75F0AF2141554E00757355 /* GoogleService-Info.plist in Resources */,
 				EC6BB2D0213E7AD700570C2A /* Assets.xcassets in Resources */,
 				EC6BB2CE213E7AD700570C2A /* Main.storyboard in Resources */,
 			);
@@ -174,11 +178,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Find/Pods-Find-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
