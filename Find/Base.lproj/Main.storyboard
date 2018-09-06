@@ -190,7 +190,8 @@
                                 </state>
                                 <connections>
                                     <action selector="connect:" destination="CDV-ar-SJa" eventType="touchUpInside" id="3kd-QV-I3f"/>
-                                    <segue destination="C4g-4l-bCU" kind="show" id="6Gr-yI-QHX"/>
+                                    <action selector="register:" destination="s7g-ja-ASA" eventType="touchUpInside" id="G2d-zQ-drb"/>
+                                    <segue destination="C4g-4l-bCU" kind="show" identifier="Profil" id="6Gr-yI-QHX"/>
                                 </connections>
                             </button>
                         </subviews>
