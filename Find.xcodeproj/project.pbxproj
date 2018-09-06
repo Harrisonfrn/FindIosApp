@@ -84,7 +84,6 @@
 		EC6BB2C7213E7AD600570C2A /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				EC75F0B02141620400757355 /* GoogleService-Info.plist */,
 				EC6BB2C8213E7AD700570C2A /* AppDelegate.swift */,
 				EC6BB2CA213E7AD700570C2A /* ViewController.swift */,
 				EC6BB2DA213E93C100570C2A /* secondViewController.swift */,
@@ -93,6 +92,7 @@
 				EC6BB2CF213E7AD700570C2A /* Assets.xcassets */,
 				EC6BB2D1213E7AD700570C2A /* LaunchScreen.storyboard */,
 				EC6BB2D4213E7AD700570C2A /* Info.plist */,
+				EC75F0B02141620400757355 /* GoogleService-Info.plist */,
 			);
 			path = Find;
 			sourceTree = "<group>";
