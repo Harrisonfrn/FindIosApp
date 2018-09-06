@@ -15,6 +15,7 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var Email: UITextField!
     @IBOutlet weak var Password: UITextField!
     @IBOutlet weak var aa: UIButton!
+    @IBOutlet weak var imgSignUp: UIImageView!
     
     @IBOutlet weak var img: UIImageView!
     
@@ -36,7 +37,7 @@ class ThirdViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hj.jpg")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "hh.jpg")!)
         
         aa.layer.cornerRadius = 6
         
@@ -61,14 +62,6 @@ class ThirdViewController: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }
